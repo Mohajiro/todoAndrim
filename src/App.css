@@ -1,0 +1,81 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #4b0a1f;
+  background: linear-gradient(135deg, #ffe0f0, #ffd6fa);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #ffd6fa, #ffe6f9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+button {
+  border-radius: 12px;
+  border: none;
+  padding: 0.6em 1.4em;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: inherit;
+  background-color: #f472b6;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ec4899;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 3px solid #f9a8d4;
+}
+
+input {
+  font-family: inherit;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #fcd4e0;
+    background: linear-gradient(135deg, #1f1b24, #2c1d35);
+  }
+
+  body {
+    background: linear-gradient(to bottom right, #2c1d35, #1f1b24);
+  }
+
+  button {
+    background-color: #db2777;
+  }
+
+  button:hover {
+    background-color: #be185d;
+  }
+}
